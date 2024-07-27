@@ -1,0 +1,114 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+</head>
+<body>
+    <div id="wrapper">
+
+        
+
+        <div class="inside-wrapper">
+           
+            <h1 class="mainheading"> Password Generator</h1>
+            
+           <div class="color-partition2">
+            <div class="inputno1">
+                
+                    <input  type="text" readonly  password-display class="mainpassword" placeholder="Password">                   
+                    <button data-copy class="copy-btn">
+                        <span data-copy-text class="copiedcontent"></span>
+                        <!-- <i class="fa-solid fa-copy fa-2xl"></i> -->
+                        <img src="mine.png" alt="hello" width="18px" height="18px" class="imgggg">
+                    </button> 
+
+                </div>
+             </div>   
+
+                
+            </div>
+            <div class="color-partition">
+                            <div class="pass-length">
+                 <p class="pass-title">Password Length</p>
+                 <p pl class="pass-count">0</p>
+            </div>
+
+            
+
+            <div class="slidecontainer">
+                <input type="range" min="1" max="20" value="4" class="slider" id="myRange" slider-movement>
+            </div>
+
+            <div class="seperation">
+                <input type="checkbox" name="" id="uppercase" class="checkboxzz">
+                <label for="uppercase" type=""  class="labeldesign">Include UpperCase Letters</label>
+            </div>
+            
+            <div class="seperation">
+               
+                <input type="checkbox" name="" id="Includelowercase" class="checkboxzz">
+                <label for="Includelowercase" type="" class="labeldesign" >Include lowerCase Letters</label>
+
+
+            </div>
+
+
+            <div class="seperation">
+              
+                <input type="checkbox" name="" id="Includenumbers" class="checkboxzz">
+                <label for="Includenumbers" type="" class="labeldesign" >Include numbers</label>
+
+            </div>
+
+               
+            <div class="seperation">
+                  
+                <input type="checkbox" name="" id="Includesymbols" class="checkboxzz">
+                <label for="Includesymbols" type="" class="labeldesign" >Include symbols</label>
+
+
+            </div>
+
+            <div class="strength-color">
+                <p class="strength-text">Strength</p>
+                <div class="strength-circle" strength-color></div>
+            </div>
+
+            <!-- buttton -->
+
+            <div>
+                <center>
+
+                    <button g-btn class="gbtn">
+                        Generate Password
+                    </button>
+
+                </center>
+                
+            </div>
+
+            </div>
+
+
+               
+
+                
+
+           
+
+            
+
+
+        </div>
+
+
+
+
+    </div>
+<script src="script.js"></script>
+</body>
+</html>
